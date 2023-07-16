@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vkettune <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vkettune <vkettune@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/28 18:39:58 by vkettune          #+#    #+#             */
-/*   Updated: 2023/07/16 11:19:00 by vkettune         ###   ########.fr       */
+/*   Created: 2023/07/06 18:14:58 by vkettune          #+#    #+#             */
+/*   Updated: 2023/07/12 08:37:02 by vkettune         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_alphabet(void)
+int	ft_strlen(char *str)
 {
-	char	letter;
+	int	i;
 
-	letter = 'a';
-	while (letter <= 'z')
+	i = 0;
+	while (str [i] != '\0')
 	{
-		write(1, &letter, 1);
-		letter++;
+		i++;
 	}
+	return (i);
 }
+/*
+int	main(void)
+{
+    char *str = "Cats are fluffy";
+
+    int length = ft_strlen(str);
+    printf("Length of the string: %d\n", length);
+    return 0;
+}*/
