@@ -109,6 +109,8 @@
   </table>
 </div>
 
+Feel free to add links to any useful videos, articles, documents or git repo's!
+
 ***
  
 ## Other useful resources:
@@ -148,17 +150,23 @@
   </table>
 </div>
 
-#### If you want to add more rows "other useful recourses", use this:
+#### If you want to add more rows to "other useful recourses", use this:
 
 ```
 <tr> <!--- Topic of the row --->
   <th> Write topic here </th>
-  <th> <a href="Link">here</a>here</th>
+  <th> <a href="Link">here</a></th>
   <th> Write notes here </th>
 </tr>
 ```
 ***
-
+<div id="Parrots" align="center">
+  <img src="https://raw.githubusercontent.com/em1e/em1e/main/banners/partyparrt-21.gif" width="100"/>
+  <img src="https://raw.githubusercontent.com/em1e/em1e/main/banners/partyparrt-21.gif" width="100"/>
+  <img src="https://raw.githubusercontent.com/em1e/em1e/main/banners/partyparrt-21.gif" width="100"/>
+  <img src="https://raw.githubusercontent.com/em1e/em1e/main/banners/partyparrt-21.gif" width="100"/>
+  <img src="https://raw.githubusercontent.com/em1e/em1e/main/banners/partyparrt-21.gif" width="100"/>
+</div>
 
 
  
