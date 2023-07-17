@@ -1,6 +1,6 @@
 NAME = rush-02
 
-SOURCES = $(addprefix ./srcs/, main.c dict.c logic.c ft.c free.c)
+SOURCES = $(addprefix ./srcs/, main.c dict.c dict_check.c logic.c ft.c free.c)
 
 OBJECTS = $(SOURCES:.c=.o)
 

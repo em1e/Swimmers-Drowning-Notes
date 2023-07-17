@@ -6,22 +6,20 @@
 /*   By: vkettune <vkettune@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 14:04:51 by vkettune          #+#    #+#             */
-/*   Updated: 2023/07/16 10:21:36 by vkettune         ###   ########.fr       */
+/*   Updated: 2023/07/16 16:21:20 by hpatsi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <stdio.h>
 
 #include "dict.h"
 #include "ft.h"
 
-void	print_dict(t_dict	*dict, int n)
+void	print_dict(t_dict	*dict, int n, int *first)
 {
 	int	i;
 
+	if (*first == 0)
+		ft_putstr(" ");
+	*first = 0;
 	i = 0;
 	while (dict[i].str != 0)
 	{
@@ -29,72 +27,68 @@ void	print_dict(t_dict	*dict, int n)
 			ft_putstr(dict[i].str);
 		i++;
 	}
-	ft_putstr(" ");
 }
 
-void	print_small(t_dict *dict, int nb)
+void	print_small(t_dict *dict, int nb, int *first)
 {
 	int	n;
 
-	//printf("prinsmall = %d\n", nb);
 	if (nb >= 100)
 	{
 		n = nb / 100;
-		//printf("test 0: %d\n", n);
-		print_dict(dict, n);
-		print_dict(dict, 100);
+		print_dict(dict, n, first);
+		print_dict(dict, 100, first);
 		nb = nb % 100;
 	}
-	//printf("pprinsmaal 10 = %d\n", nb);
 	if (nb < 20 && nb > 9)
 	{
-		//printf("test teini: %d\n", nb);
-		print_dict(dict, nb);
+		print_dict(dict, nb, first);
 		return ;
 	}
 	if (nb > 19)
 	{
 		n = (nb / 10) * 10;
-		//printf("test kymppi: %d\n", n);
-		print_dict(dict, n);
+		print_dict(dict, n, first);
 		nb = nb % 10;
 	}
-	//printf("prinsmal 1 = %d\n", nb);
 	if (nb > 0)
 	{
-		//printf("test 7: %d\n", nb);
-		print_dict(dict, nb);
+		print_dict(dict, nb, first);
 	}
 }
 
-void	print_big(t_dict *dict, int nb, int size)
+void	print_big(t_dict *dict, unsigned int nb, int size, int *first)
 {
 	int	n;
 
 	n = nb / size;
-	//printf("test A: n = %d, size = %d\n", n, size);
 	n = n % 1000;
-n = (nb / 10) * 10;	//printf("test B: %d\n", n);
-	print_small(dict, n);
-	print_dict(dict, size);
+	if (n > 0)
+	{
+		print_small(dict, n, first);
+		print_dict(dict, size, first);
+	}
 }
 
-void	find_num(t_dict	*dict, int nb)
+void	find_num(t_dict	*dict, unsigned int nb)
 {
+	int	f;
+	int	*first;
+
+	f = 1;
+	first = &f;
 	if (nb == 0)
 	{
-		print_dict(dict, nb);
+		print_dict(dict, nb, first);
+		ft_putstr("\n");
 		return ;
 	}
 	if (nb >= 1000000000)
-		print_big(dict, nb, 1000000000);
-	//printf("test 1: %d\n", nb);
+		print_big(dict, nb, 1000000000, first);
 	if (nb >= 1000000)
-		print_big(dict, nb, 1000000);
-	//printf("test 2: %d\n", nb);
+		print_big(dict, nb, 1000000, first);
 	if (nb >= 1000)
-		print_big(dict, nb, 1000);
-	//printf("test 3: %d\n", nb);
-	print_small(dict, nb % 1000);
+		print_big(dict, nb, 1000, first);
+	print_small(dict, nb % 1000, first);
 	ft_putstr("\n");
 }
