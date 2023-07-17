@@ -1,6 +1,6 @@
 #### Piscine 26.6.2023 - 21.07.2023
 ***
-<img src=""  title="CSS3" alt="CSS" width="40" height="40"/>
+
 ## Useful links:
 <div id="useful-links" >
   <table>
@@ -18,7 +18,7 @@
     </tr>
     <tr> <!--- Shell01 --->
       <th> Shell01 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
@@ -36,19 +36,19 @@
     </tr>
     <tr> <!--- C02 --->
       <th> C02 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
     <tr> <!--- C03 --->
       <th> C03 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
     <tr> <!--- C04 --->
       <th> C04 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
@@ -60,13 +60,13 @@
     </tr>
     <tr> <!--- C06 --->
       <th> C06 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
     <tr> <!--- C07 --->
       <th> C07 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
@@ -84,25 +84,25 @@
     </tr>
     <tr> <!--- C10 --->
       <th> C10 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
     <tr> <!--- C11 --->
       <th> C11 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
     <tr> <!--- C12 --->
       <th> C12 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
     <tr> <!--- C13 --->
       <th> C13 </th>
-      <th><!---<a href="Link" target=”blank”>Name</a>---></th>
+      <th><!---<a href="Link">topic</a>---></th>
       <th></th>
       <th></th>
     </tr>
@@ -125,30 +125,35 @@
       <th><a href="https://github.com/agavrel/42_CheatSheet">here</a></th>
       <th>It's meant for 42 alumni, students and Candidates</th>
     </tr>
-    <tr> <!--- Alias --->
-      <th>Alias Command in termianl</th>
-      <th><a href="https://www.youtube.com/watch?v=iOGqms6BizE">here</a></th>
-      <th><!--- Write notes here ---></th>
-    </tr>
-    <tr> <!--- Debugging --->
-      <th>Debigging in C</th>
-      <th><a href="https://m.youtube.com/watch?v=ZI6buaVvk8g" target=”blank”>here</a></th>
-      <th><!--- Write notes here ---></th>
+    <tr> <!--- Hive Helsinki GitHub --->
+      <th> Hive Helsinki Github </th>
+      <th> <a href="https://github.com/hivehelsinki">here</a> </th>
+      <th></th>
     </tr>
     <tr> <!--- Topic --->
-      <th>getting started with vim</th>
-      <th><a href="https://www.youtube.com/watch?v=ggSyF1SVFr4" target=”blank”>link 1</a></br><a href="https://www.youtube.com/watch?v=H3X4cJchnkA" target=”blank”>link 2</a></th>
-      <th><!--- Write notes here ---></th>
+      <th>  </th>
+      <th><!---<a href="Link">here</a>---></th>
+      <th>  </th>
+    </tr>
+    <tr> <!--- Topic --->
+      <th>  </th>
+      <th><!---<a href="Link">here</a>---></th>
+      <th>  </th>
+    </tr>
+    <tr> <!--- Topic --->
+      <th>  </th>
+      <th><!---<a href="Link">here</a>---></th>
+      <th>  </th>
     </tr>
   </table>
 </div>
 
-#### If you want to add more rows Useful recourses, use this:
+#### If you want to add more rows "other useful recourses", use this:
 
 ```
 <tr> <!--- Topic of the row --->
   <th> Write topic here </th>
-  <th> <a href="Link" >here</a> </th>
+  <th> <a href="Link">here</a>here</th>
   <th> Write notes here </th>
 </tr>
 ```
