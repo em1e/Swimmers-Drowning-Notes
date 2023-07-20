@@ -138,9 +138,9 @@ Feel free to add links to any useful videos, articles, documents or git repo's!
       <th> if you want to learn something new, before master studies </th>
     </tr>
     <tr> <!--- Topic --->
-      <th>  </th>
-      <th><!---<a href="Link">here</a>---></th>
-      <th>  </th>
+      <th> Oh Shit Git </th>
+      <th><a href="https://ohshitgit.com/">here</a></th>
+      <th> for when you mess smth up with git </th>
     </tr>
     <tr> <!--- Topic --->
       <th>  </th>
