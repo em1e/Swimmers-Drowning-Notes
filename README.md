@@ -133,9 +133,9 @@ Feel free to add links to any useful videos, articles, documents or git repo's!
       <th></th>
     </tr>
     <tr> <!--- Topic --->
-      <th>  </th>
-      <th><!---<a href="Link">here</a>---></th>
-      <th>  </th>
+      <th> ZTM </th>
+      <th><a href="https://zerotomastery.io/workshops-and-more/">here</a></th>
+      <th> if you want to learn something new, before master studies </th>
     </tr>
     <tr> <!--- Topic --->
       <th>  </th>
