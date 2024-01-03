@@ -2,7 +2,7 @@
 ***
 
 ## Useful links:
-<div id="useful-links" >
+<div id="useful-links">
   <table>
     <tr> <!--- Header --->
       <th> Topic </th>
@@ -115,7 +115,7 @@ Feel free to add links to any useful videos, articles, documents or git repo's!
  
 ## Other useful resources:
 
-<div id="other-resources" >
+<div id="other-resources">
   <table>
     <tr> <!--- Header --->
       <th> Topic </th>
@@ -150,15 +150,14 @@ Feel free to add links to any useful videos, articles, documents or git repo's!
   </table>
 </div>
 
-#### If you want to add more rows to "other useful recourses", use this:
-
-```
-<tr> <!--- Topic of the row --->
+<!---
+<tr> Topic of the row 
   <th> Write topic here </th>
   <th> <a href="Link">here</a></th>
   <th> Write notes here </th>
 </tr>
-```
+--->
+
 ***
 <div id="Parrots" align="center">
   <img src="https://raw.githubusercontent.com/em1e/em1e/main/banners/partyparrt-21.gif" width="100"/>
